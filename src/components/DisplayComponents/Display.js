@@ -1,5 +1,11 @@
 import React from "react";
 
-const Display = () => {
-  return <div>{/* Display any props data here */}</div>;
+export default function Display (props)  {
+  return (
+  <div className={props.containerClass}>
+    <p className={props.textClass}>{props.text}</p>
+  </div>
+  )
 };
+
+
